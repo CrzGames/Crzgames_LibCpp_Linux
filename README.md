@@ -55,7 +55,7 @@ OpenSSL :
   2. libssl.a, libcrypto.a (libssl.a à linker avant libcrypto.a) -> à linker
 
 jwt-cpp : 
-  1. dossier include (jwt-cpp) -> à linker (et eventuellement une lib json tel que nolhomann
+  1. dossier include (jwt-cpp) -> à linker (et eventuellement une lib json tel que nlohmann)
 
 <br /><br /><br /><br />
 
