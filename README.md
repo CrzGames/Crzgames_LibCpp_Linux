@@ -54,9 +54,6 @@ OpenSSL :
   1. dossier include (openssl/crypto/internal) -> à linker
   2. libssl.a, libcrypto.a (libssl.a à linker avant libcrypto.a) -> à linker
 
-jwt-cpp : 
-  1. dossier include (jwt-cpp) -> à linker (et eventuellement une lib json tel que nlohmann)
-
 <br /><br /><br /><br />
 
 
@@ -173,11 +170,6 @@ patchelf --set-rpath '$ORIGIN' --force-rpath /chemin/vers/libSDL2.so
    Garder à l'esprit quand on crée une .AppImage (avec des lib par exemple pour : x86_64), elle sera compatible sur la totalité des distribution Linux mais seulement pour x86_64.
    
 <br /><br /><br />
-
-jwt-cpp : 
-1. Il faudra récupérer la dernière version release : https://github.com/Thalhammer/jwt-cpp/releases (source.zip)
-2. Récupérer le dossier 'jwt-cpp' dans le dossier include du dossier précédemment télécharger.
-<br /><br />
 
 OpenSSL : 
 1. Il faudra cloner le github de OpenSSL officiel à partir d'une branche spécifique pour cibler la version comme ceci :
