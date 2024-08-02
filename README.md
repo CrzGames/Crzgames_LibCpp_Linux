@@ -26,9 +26,9 @@ MariaDB Connector C :
   3. libmariadb.so + dossier plugins (.so) -> dossier bin <br /><br />
 
 Nats Client C :
-  1. dossier include (nats) -> à linker
+  1. dossier include (nats, protobuf-c) -> à linker
   2. libnats_static.a, libprotobuf-c.a -> à linker
-  
+
 SDL2 : 
   1. dossier include (SDL) -> à linker
   2. libSDL2.a, libSDL2main.a -> librairies static à linker
@@ -290,6 +290,20 @@ Nats Client C :
 4. Récupérer la librairie depuis le repo : ./build-nats/lib/ (libnats_static.a) <br />
    Récupérer le dossier include (.h) depuis le repo : ./build-nats/include/ <br /><br />
 
+protobuf-c :
+1. Run a command install packages :
+    ```bash
+    sudo apt-get install autoconf automake libtool make protobuf-compiler libprotobuf-dev pkg-config
+    ```
+2. Télécharger la dernière version du repository : https://github.com/protobuf-c/protobuf-c/releases (.tar.gz)
+3. Go in repository, and run command :
+  ```bash
+  # Generate lib
+  ./configure --enable-static --disable-shared --prefix=$PWD/build/ && make && make install
+  ``` 
+4. Récupérer la librairie depuis le repo : ./build/lib/ (libprotobuf-c.a) <br />
+   Récupérer le dossier include (.h) depuis le repo : ./build/include/ <br /><br />
+   
 RCENet :
 1. Télécharger le repository de la dernière release : https://github.com/corentin35000/Crzgames_RCENet/releases (librcenet-linux.tar.gz)
 2. Récupérer les fichiers include dans le dossier : ./linux/x86_64/include/ du dossier télécharger précédemment
