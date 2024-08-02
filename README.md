@@ -27,8 +27,7 @@ MariaDB Connector C :
 
 Nats Client C :
   1. dossier include (nats) -> à linker
-  2. libnats_static.a -> à linker
-  3. libnats.so, libnats.so.3.6, libnats.so.3.6.1 -> dossier bin <br /><br />
+  2. libnats_static.a, libprotobuf-c.a -> à linker
   
 SDL2 : 
   1. dossier include (SDL) -> à linker
