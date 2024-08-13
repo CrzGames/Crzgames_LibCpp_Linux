@@ -16,6 +16,14 @@ Bibliothèque statique : .a<br />
 
 
 ## Documentation des dépendances pour chacune des librairies :
+hiredis :
+  1. dossier include () -> à linker
+  2. libhiredis.a -> librairie static à linker <br /><br />
+
+jwt-cpp :
+1. dossier include (jwt-cpp, openssl, picojson) -> à linker
+2. libssl, libcrypto -> à linker  <br /><br />
+   
 RCENet : 
   1. dossier include (rcenet) -> à linker
   2. librcenet.a -> librairies static à linker <br /><br />
@@ -170,6 +178,25 @@ patchelf --set-rpath '$ORIGIN' --force-rpath /chemin/vers/libSDL2.so
    
 <br /><br /><br />
 
+jwt-cpp : 
+1. Il faudra récupérer la dernière version release : https://github.com/Thalhammer/jwt-cpp/releases (source.zip)
+2. Récupérer le dossier 'jwt-cpp' et 'picojson' dans le dossier include du dossier précédemment télécharger.
+   
+<br /><br />
+
+hiredis : 
+1. Il faudra récupérer la dernière version release : https://github.com/redis/hiredis/releases
+2. Construire la lib :
+```bash
+cd hirelis
+mkdir build
+cmake .. -DBUILD_SHARED_LIBS=OFF
+make
+```
+3. Récupérer la lib 'libhiredis.a' et fichier include
+   
+<br /><br />
+
 OpenSSL : 
 1. Il faudra cloner le github de OpenSSL officiel à partir d'une branche spécifique pour cibler la version comme ceci :
 ```bash
@@ -184,6 +211,7 @@ mkdir build-x86_64 && cd build-x86_64
 make
 sudo make install
 ```
+
 <br /><br />
 
 SDL2 :
