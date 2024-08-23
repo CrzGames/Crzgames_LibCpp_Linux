@@ -17,7 +17,7 @@ Bibliothèque statique : .a<br />
 
 ## Documentation des dépendances pour chacune des librairies :
 hiredis :
-  1. dossier include () -> à linker
+  1. dossier include (hiredis) -> à linker
   2. libhiredis.a -> librairie static à linker <br /><br />
 
 jwt-cpp :
