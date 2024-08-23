@@ -28,11 +28,6 @@ RCENet :
   1. dossier include (rcenet) -> à linker
   2. librcenet.a -> librairies static à linker <br /><br />
 
-MariaDB Connector C :
-  1. dossier include (mariadb_connector_c) -> à linker
-  2. libmariadb.a -> à linker
-  3. libmariadb.so + dossier plugins (.so) -> dossier bin <br /><br />
-
 Nats Client C :
   1. dossier include (nats, protobuf-c) -> à linker
   2. libnats_static.a, libprotobuf-c.a -> à linker
@@ -297,12 +292,6 @@ SDL2_mixer :
 6. Récupérer la librairie static (.a) et dossier include dans le dossier ci-dessus (lib et include)
    
 <br /><br />
-
-MariaDB Connector C :
-1. Aller sur : https://mariadb.com/downloads/connectors/connectors-data-access/c-connector
-2. Selectionner le système d'exploitation (Debian12), cliquer sur 'Download'.
-3. Récupérer les librairies .a / .so depuis le dossier télécharger précédemment : ../lib/mariadb/
-4. Le dossier include depuis le dossier télécharger précédemment : ../include/mariadb/ <br /><br />
 
 Nats Client C :
 1. Run a command install packages for protobuf-c to Nats :
