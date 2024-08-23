@@ -322,7 +322,7 @@ protobuf-c :
    Récupérer le dossier include (.h) depuis le repo : ./build/include/ <br /><br />
    
 RCENet :
-1. Télécharger le repository de la dernière release : https://github.com/corentin35000/Crzgames_RCENet/releases (librcenet-linux.tar.gz)
+1. Télécharger le repository de la dernière release : https://github.com/CrzGames/Crzgames_RCENet/releases (librcenet-linux.tar.gz)
 2. Récupérer les fichiers include dans le dossier : ./linux/x86_64/include/ du dossier télécharger précédemment
 3. Récupérer la librairie (librcenet.a) depuis le dossier : ./linux/x86_64/lib/ du dossier télécharger précédemment
 
