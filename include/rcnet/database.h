@@ -1,4 +1,0 @@
-#ifndef RCNET_DATABASE_H
-#define RCNET_DATABASE_H
-
-#endif // RCNET_DATABASE_H
