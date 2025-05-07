@@ -208,6 +208,8 @@ mkdir openssl-build-x86_64 && cd openssl-build-x86_64
 make -j$(nproc)
 make
 make install
+# Pour récupérer le dossier include des headers et les deux libraries static (libcrypto.a / libssl.a)
+cd openssl-build-x86_64
 cd ../ && make clean
 
 # OpenSSL pour Linux arm64 :
@@ -216,6 +218,8 @@ mkdir openssl-build-aarch64 && cd openssl-build-aarch64
 make -j$(nproc)
 make
 make install
+# Pour récupérer le dossier include des headers et les deux libraries static (libcrypto.a / libssl.a)
+cd openssl-build-aarch64
 cd ../ && make clean
 ```
 
