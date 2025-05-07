@@ -196,15 +196,24 @@ OpenSSL :
 1. Il faudra cloner le github de OpenSSL officiel à partir d'une branche spécifique pour cibler la version comme ceci :
 ```bash
 # Changer la version de la branche de OpenSSL si besoin
-git clone -b openssl-3.3.1 https://github.com/openssl/openssl.git
+git clone -b openssl-3.5.0 https://github.com/openssl/openssl.git
 cd openssl/
 ```
-2. Construire OpenSSL pour Linux x86_64 :
+2. Construire OpenSSL :
 ```bash
+# OpenSSL pour Linux x86_64 :
 mkdir build-x86_64 && cd build-x86_64
 ../Configure linux-x86_64 -static --static --prefix=$PWD
 make
 sudo make install
+make clean
+
+# OpenSSL pour Linux arm64 :
+mkdir build-x86_64 && cd build-x86_64
+../Configure linux-aarch64 -static --static --prefix=$PWD
+make
+sudo make install
+make clean
 ```
 
 <br /><br />
