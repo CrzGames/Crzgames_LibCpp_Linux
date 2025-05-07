@@ -10,7 +10,8 @@ Bibliothèque statique : .a<br />
 
 
 ## Supported architecture for Linux system :
-- Linux x86_64 <br />
+- x86_64 <br />
+- arm64
 
 <br /><br /><br /><br />
 
