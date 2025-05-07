@@ -202,14 +202,14 @@ cd openssl/
 2. Construire OpenSSL :
 ```bash
 # OpenSSL pour Linux x86_64 :
-mkdir build-x86_64 && cd build-x86_64
+mkdir openssl-build-x86_64 && cd openssl-build-x86_64
 ../Configure linux-x86_64 -static --static --prefix=$PWD
 make
 sudo make install
 make clean
 
 # OpenSSL pour Linux arm64 :
-mkdir build-x86_64 && cd build-x86_64
+mkdir openssl-build-aarch64 && cd openssl-build-aarch64
 ../Configure linux-aarch64 -static --static --prefix=$PWD
 make
 sudo make install
