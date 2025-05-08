@@ -64,25 +64,15 @@ OpenSSL :
 ### Setup Environment :
 1. Install packages apt (à faire depuis root) :
 ```bash
-  sudo apt update &&
-  sudo apt upgrade &&
-  sudo apt-get install -y git g++ make libtool automake autopoint pkg-config flex bison lua5.2 &&
-  sudo apt-get install -y curl &&
-  sudo apt-get install -y openssl &&
-  sudo apt-get install -y libssl-dev &&
+  sudo apt update && sudo apt upgrade
 ```
 
-2. Set sudo rights for user (a faire depuis root, remplacer 'user' par le nom de l'utilisateur du système linux par exemple : debian) :
-```bash
-  sudo usermod -aG sudo user
-```
-
-3. Install homebrew (à faire depuis user) :
+2. Install homebrew :
 ```bash
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-4. Après l'installation de homebrew il faut importer les variables d'environnement et installer les deux librairies (à faire depuis user, modifier 'debian' par le nom d'utilisateur si besoin) :
+3. Après l'installation de homebrew il faut importer les variables d'environnement et installer les deux librairies (c'est la sortie que demande brew de faire) :
 ```bash
   echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /home/debian/.bashrc && 
   echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/debian/.bashrc && 
